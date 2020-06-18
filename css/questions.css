@@ -51,7 +51,8 @@ html,body{
   #timerprogress{
       height: 12%;
       border-bottom: 2px solid black;
-      background-color:rgb(176, 214, 221);
+      
+      background-color:rgb(225, 248, 255);
   }
   #xtimer,#xprogress{
       overflow: visible;
@@ -96,7 +97,7 @@ html,body{
 
   font-weight: 600;
   width: 75%;
-
+  height: 100%;
   padding: 3px;
   padding-bottom: 4px;
   color: white;
@@ -144,7 +145,8 @@ html,body{
     width: 100%;
     height: 8%;
     color: white;
-    background-color: rgb(150, 186, 192);
+    background-color: rgb(225, 248, 255);
+    /*background-color: rgb(150, 186, 192);*/
     text-align: center;
 
   }
@@ -167,10 +169,12 @@ button{
     width: 50%;
     background-image:linear-gradient( rgb(49, 49, 49),black);
     border: none;
-    color: wheat;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
 }
-
+button:hover{
+  opacity: 0.9;
+}
 
   .fullheight{
       height: 100%;

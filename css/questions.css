@@ -49,6 +49,7 @@ html,body{
     text-align: center;
   }
   #timer,#progress{
+    background-color:rgb(168, 200, 206);
     position: relative;
     height: 12%;
     border: 2px solid black;

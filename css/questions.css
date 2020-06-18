@@ -6,6 +6,19 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+/*------------color change classes---------*/
+.cRed{
+  background-color: red;
+}
+.bRed{
+  color: red;
+}
+.cGreen{
+  background-color: green;
+}
+
+/*-----------------------------------------*/
+
 html,body{
     height: 100vh;
     
@@ -116,10 +129,7 @@ html,body{
     border-top-right-radius: 15px ;
     border-bottom-right-radius: 15px 
 }
-  
-  #flag{
-    text-align: center;
-  }
+
  #Qcontent{
 
       background-color: white;
@@ -144,6 +154,16 @@ html,body{
       margin-left: 10%;
       border: 2px;
   }
+  #reset{
+    margin-left: 10%;
+    width: 10%;
+    border-radius: 20px;
+    outline: none;
+    transform: none;
+    margin-top: 10px;
+    background-image:linear-gradient( rgb(185, 0, 0),rgb(199, 0, 0));
+
+  }
   .footer {
     position: fixed;
     left: 0;
@@ -151,22 +171,26 @@ html,body{
     width: 100%;
     height: 8%;
     color: white;
-    background-color: rgb(225, 248, 255);
+    background-color: rgb(197, 241, 255);
     /*background-color: rgb(150, 186, 192);*/
     text-align: center;
 
   }
-#next,#previous{
+#next,#previous,#flag{
     height: 100%;
 }
-#flag{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  background-color: red;
-  height: 50%;
+#flagbutton{
+  width: 60%;
+  font-size: 20px;
+  border-radius: 15px;
+  color: black;
+  background-image:linear-gradient(rgb(252, 167, 10),rgb(252, 167, 10)) ;
+  outline: none;
 }
+#flagbutton>span{
+  font-size: 22px ;
+}
+
 button{
     position: relative;
     top: 50%;
@@ -299,6 +323,24 @@ button:hover{
     #timerprogress{
         height: auto;
         overflow: auto;
+    }
+    #Qimage{
+      width: 100%;
+    }
+    #reset{
+      width: 50%;
+    }
+    button{
+      width: 60%;
+    }
+    #flagbutton{
+      width: 100%;
+    }
+    .footer{
+      height: 11%;
+    }
+    #xqNum,#xqCategory{
+      width: 95%;
     }
     .col-sm-1 {
       width: 8.33% ;

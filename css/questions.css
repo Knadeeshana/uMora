@@ -7,16 +7,23 @@
 
 }
 /*------------color change classes---------*/
-.cRed{
-  background-color: red;
-}
+
+/*---Add this class to the IDs from 1 to 30 to make its background red and text white --- */
 .bRed{
-  color: red;
-}
-.cGreen{
-  background-color: green;
+  background-color: red !important;
+  color: white;
 }
 
+/*---Add this class to the IDs from 1 to 30 to make its background green and text white --- */
+.bGreen{
+  background-color: green !important;
+  color: white;
+}
+/*---Add this class to the ID flagbutton to make it red --- */
+.flagcolorRed{
+  background-image:linear-gradient( rgb(207, 0, 0),rgb(238, 0, 0)) !important;
+  color: white !important;
+}
 /*-----------------------------------------*/
 
 html,body{
@@ -42,6 +49,7 @@ html,body{
 
   }
   button.submit{
+    padding: 0.5%;
     position: absolute;
     width: 20%;
     right: 10%;
@@ -49,7 +57,7 @@ html,body{
     font-weight: 800;
     font-size: 16px;
     transform: translateY(-50%);
-    background-image:linear-gradient( rgb(255, 0, 0),rgb(255, 0, 0));
+    background-image:linear-gradient( rgb(207, 0, 0),rgb(238, 0, 0));
   }
   /*---------------Question block-------------*/
   div>span{
@@ -98,7 +106,8 @@ html,body{
     text-align: center;
     float: left;
     width: 3.33%;
-    border: 0.5px solid black;
+    background-color: rgb(127, 197, 202);
+    border: 0.5px solid rgb(117, 117, 117);
   }
   #xnumcategory{
       left: 50%;
@@ -179,9 +188,12 @@ html,body{
 #next,#previous,#flag{
     height: 100%;
 }
+.cRed{
+  color: red;
+}
 #flagbutton{
   width: 60%;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 15px;
   color: black;
   background-image:linear-gradient(rgb(252, 167, 10),rgb(252, 167, 10)) ;
@@ -379,4 +391,3 @@ button:hover{
       width: 100%;
     }
   }
-  

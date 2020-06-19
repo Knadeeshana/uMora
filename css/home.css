@@ -39,13 +39,11 @@ ul.topnav li.right {
   font-size: 16px;
   float: right;
 }
-.right#logoblock{
-  float: right !important;
-}
+
 #description{
   padding: 2%;
   padding-top:6% ;
-  margin-bottom: 10%;
+ 
 }
 
 #logoimg{
@@ -166,7 +164,7 @@ button:focus{
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
-  .md-top-padding{
+  .spacer{
     padding-top: 5%;
   }
   #logoimg{
@@ -212,6 +210,9 @@ button:focus{
 @media(max-width:767px){
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
   float: left;
+}
+#description{
+padding-bottom: 25%;
 }
 .right#logoblock{
   float: left !important;

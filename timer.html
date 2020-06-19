@@ -2,43 +2,38 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/timer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Coursera</title>
 </head>
-
-
 <body>
     <ul class="topnav">
         <li>
-            <p>μMora Mathematics Competition 2020</p>
+            <a href="#home">μMora Mathematics Competition 2020</a>
         </li>
         <li class="right"><a href="#about">About</a></li>
         <li class="right"><a href="#contact">F.A.Q.</a></li>
         <li class="right"><a href="#news">Instructions</a></li>
 
     </ul>
-    <div class="spacer">
-        <div class="col-lg-6 col-md-12 col-sm-12" id="logoblock">
-            <img src="png.png" id="logoimg">
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12" id="timerbox">
-                <div id="timerbox">
-                    <p>Competition begins in</p>
-                    <p id="demo"></p>
-                    <button> Test Round </button>
-                </div>
+<div class="flex-container">
+    <div class="column" id="logoblock">
+        <img src="png.png" id="logoimg">
+    </div>
 
+    <div class="timercolumn">
+        <div id="timerbox">
+            <p id="caption">Competition begins in</p>
+            <p id="demo"></p>
+            <button> Test Round </button>
+            <!--img src="png.png" id="logoimg"-->
         </div>
     </div>
+</div>
     <div class="footer">
         <a href="https://www.facebook.com/UOM.ECLUB" target="_blank">μMora | EClub | University of Moratuwa</a>
     </div>
-
-
-
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Jun 28, 2020 14:00:00").getTime();
@@ -69,7 +64,6 @@
             }
         }, 1000);
     </script>
-
 </body>
 
 </html>

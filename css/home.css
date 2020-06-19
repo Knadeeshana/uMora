@@ -3,77 +3,111 @@
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body{
+body,html{
   background-color: rgb(219, 232, 235);
   background-image: linear-gradient(to right, white , rgb(163, 217, 230));
 }
-#navbar{
-  padding:20px 100px 20px 20px;
-  font-size: 2em;
-  background-color: rgb(18, 18, 24);
-  color: white;
-  box-shadow: 0px 1px 3px rgb(1, 20, 49);
-  height: 5%;
+ul.topnav {
+  height: 10%;
+  font-size: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0px 1px 2px rgb(0, 39, 61);
 }
-#logo{  
-  padding: 10px;
-  height: 300px;
-}
-#logoimg{
-  display: inline-block;
-  height: 500px;
-}
-#logoblock{
-  display:flex;
-  justify-content: center ;
-  align-items: center;
-  height: 100%;;
-}
+ul.topnav li {float: left;}
+ul.topnav li a {
   
-h1 {
-  margin-bottom: 15px;
+  height: 100%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {background-color: #333;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {
+  margin-top: 10px;
+  height: 100%;
+  font-size: 16px;
+  float: right;
+}
+.sameheight{
+display: table;
+}
+.right#logoblock{
+  float: right !important;
 }
 #description{
-  background-color: rgb(7, 109, 134);
-  border-bottom-right-radius: 300px;
-  padding-right: 100px;
-  padding-bottom: 20px;
-  height: 50%;
+  display: table-cell;
+  padding: 2%;
 }
+
+#logoimg{
+  display: inline-block;
+  width: 80%;
+}
+#logoblock{
+  display: table-cell;
+  text-align: center;
+  padding-top: 1%;
+  overflow: auto;
+  height: auto;;
+}
+
 p {
-  text-align: left;
-  font-size: 20px;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
   width: 90%;
-  padding-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  font-family:sans-serif;
-  color: rgb(131, 200, 218);
+  margin-bottom: 5%;
+  color: rgb(0, 0, 0);
 }
-.button{
-  padding-top: 20px;
-  padding-left: 30px;
-  height: 50%;
-  width: 100%;
-  text-align: left;
-
+#loginbox{
+  padding: 5%;
 }
-#login{
+#signinheader{
+  
   height: 100px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: 900;
+  border-radius: 10px 10px 30px 30px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color:rgb(18, 18, 24);
 }
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
 button {
   background-color: rgb(18, 18, 24);
   color: white;
-  padding: 14px 20px; 
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  width: 60%;
-  text-align: center;
+  width: 100%;
 }
-
 button:hover{
-  background-color: rgb(2, 48, 66);
+  opacity: 0.8;
 
 }
 button:focus{
@@ -81,11 +115,20 @@ button:focus{
   background-color: rgb(18, 18, 24);
 }
 
-/* Simple Responsive Framework. */
-.row {
+.footer {
+  border-top: 2px solid rgb(18, 18, 24);
+  box-shadow: -0px -0px 1px black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-}
+  height: 5%;
+  color: white;
+  background-color: rgb(197, 241, 255);
+  /*background-color: rgb(150, 186, 192);*/
+  text-align: center;
 
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -130,10 +173,9 @@ button:focus{
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -171,4 +213,50 @@ button:focus{
   .col-md-12 {
     width: 100%;
   }
+}
+@media(max-width:767px){
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  float: left;
+}
+.right#logoblock{
+  float: left !important;
+}
+ul.topnav li.right, 
+  ul.topnav li {float: none;}
+.col-sm-1 {
+  width: 8.33% ;
+}
+.col-sm-2 {
+  width: 16.66%;
+}
+.col-sm-3 {
+  width: 25%;
+}
+.col-sm-4 {
+  width: 33.33%;
+}
+.col-sm-5 {
+  width: 41.66%;
+}
+.col-sm-6 {
+  width: 50%;
+}
+.col-sm-7 {
+  width: 58.33%;
+}
+.col-sm-8 {
+  width: 66.66%;
+}
+.col-sm-9 {
+  width: 74.99%;
+}
+.col-sm-10 {
+  width: 83.33%;
+}
+.col-sm-11 {
+  width: 91.66%;
+}
+.col-sm-12 {
+  width: 100%;
+}
 }

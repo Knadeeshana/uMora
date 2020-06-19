@@ -145,9 +145,8 @@ html,body{
       height: 77%;
   }
   #questionContent{
-    overflow-y: scroll;
+      overflow-y: scroll;
       height: 90%;
-   
       font-size: 16px;
       padding-left: 30px;
       padding-right: 30px;
@@ -278,6 +277,9 @@ button:hover{
     }
     .verticalCenter{
         transform: none;
+    }
+    #reset{
+      width: 30%;
     }
     .col-md-1 {
       width: 8.33%;

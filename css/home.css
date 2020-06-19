@@ -39,14 +39,10 @@ ul.topnav li.right {
   font-size: 16px;
   float: right;
 }
-.sameheight{
-display: table;
-}
 .right#logoblock{
   float: right !important;
 }
 #description{
-  display: table-cell;
   padding: 2%;
   padding-top:6% ;
   margin-bottom: 10%;
@@ -57,7 +53,6 @@ display: table;
   width: 80%;
 }
 #logoblock{
-  display: table-cell;
   text-align: center;
   overflow: auto;
   height: auto;;
@@ -170,6 +165,12 @@ button:focus{
 @media (min-width: 768px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
+  }
+  .md-top-padding{
+    padding-top: 5%;
+  }
+  #logoimg{
+    width: 100%;
   }
   .col-md-1 {
     width: 8.33%;

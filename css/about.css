@@ -86,7 +86,9 @@ ul.topnav {
     margin: auto;
     min-height: 100vh;
 }
-
+#aboutDescription{
+    text-align: justify;
+}
 #logoimg{
     display: inline-block;
     width: 30%;

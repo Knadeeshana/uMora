@@ -49,8 +49,6 @@ ul.topnav {
   }
 
 .tflex-container{
-    display: flex;
-    
     height: 92vh;
 }
 .tcolumn {

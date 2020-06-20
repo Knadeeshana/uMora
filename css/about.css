@@ -93,7 +93,7 @@ hr{
     flex-direction: column;
     max-width: 75%;
     margin: auto;
-    min-height: 100vh;
+    min-height: auto;
 }
 #aboutDescription{
     text-align: justify;
@@ -132,12 +132,16 @@ hr{
 }
 #aboutlinks i{  position: relative;
     transform: translateY(25%);
-    color: rgb(0, 89, 107);
+    color: rgb(0, 70, 107);
 }
   
 @media (max-width:767px){
     .aboutflex-container{
         max-width: 95%;
+    }
+    #logoimg{
+        display: inline-block;
+        width: 40%;
     }
 
     ul.topnav li{

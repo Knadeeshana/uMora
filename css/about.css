@@ -31,14 +31,7 @@ ul.topnav {
     padding: 14px 16px;
     text-decoration: none;
   }
-  .footer>a{
-    color: black;
-    height: 100%;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  
   ul.topnav li a:hover:not(.active) {background-color: #333;}
   
   ul.topnav li.right {
@@ -47,36 +40,31 @@ ul.topnav {
     font-size: 16px;
     float: right;
   }
-
+  .footer {
+    text-align: center;
+    border-top: 2px solid rgb(18, 18, 24);
+    box-shadow: -0px -0px 1px black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    background-color: rgb(205, 219, 221);
+    /*background-color: rgb(150, 186, 192);*/
+    overflow: hidden;
+}
+.footer>a{
+    color: black;
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 .tflex-container{
     height: 92vh;
 }
-.tcolumn {
-    flex:1;
-}
-#logoblock{
-    background-image: url("../CountdownBG.png") ;
-    background-repeat: repeat;
-    background-size: 76%;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-}
-.timercolumn {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#timerbox{
-    padding: 2%;
-    text-align: center;
-   
-  }
-  p#demo{
-      font-size: 60px;
-      width: 100%;
-  }
+
   button.t{
     background-color: rgb(18, 18, 24);
     color: white;
@@ -96,46 +84,15 @@ ul.topnav {
     background-color: rgb(18, 18, 24);
   }
 
-.footer {
-    text-align: center;
-    border-top: 2px solid rgb(18, 18, 24);
-    box-shadow: -0px -0px 1px black;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: black;
-    background-color: rgb(205, 219, 221);
-    /*background-color: rgb(150, 186, 192);*/
-    overflow: hidden;
-  
-}
-#logoimg{
-    display: none;
-}
-#caption{
-    font-size: 18px;
+@media (min-width: 768px) and (max-width: 1199px) {
 }
 
-#logoimg{
-    display: none;
-    width: 75%;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-    p#demo{
-        font-size: 45px;
-    }
-}
 @media screen and (min-width: 767px){
-    .tflex-container {
-        display: flex;
-    }    
+
     
 }
 @media (max-width:767px){
-    .timercolumn{
-        height: 45%;
-    }
+
     ul.topnav li{
         float: none;
         width: 100%;
@@ -146,18 +103,6 @@ ul.topnav {
     ul.topnav li a{
         padding: 10px 14px;
     }
-    #logoblock{
-        text-align: center;
-        overflow: auto;
-        height: auto;;
-      }
-    #logoimg{
-        display: inline-block;
-        width: 75%;
-    }
-    p#demo{
-        font-size: 40px;
-    }
     ul.topnav{
         text-align: center;
     }
@@ -167,9 +112,4 @@ ul.topnav {
         font-size: 20px;
     }
     
-}
-@media (max-width:380px){
-    p#demo{
-        font-size: 30px;
-    }
 }

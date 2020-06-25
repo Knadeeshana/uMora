@@ -75,8 +75,11 @@
     }
 }
 @media (max-width:330px){
-    #alerticon,#alertwait{
+    #alerticon{
         font-size: 40px;
-        color: rgb(0, 116, 151);
+    }
+    #alertwait{
+        font-size: 30px;
+
     }
 }
